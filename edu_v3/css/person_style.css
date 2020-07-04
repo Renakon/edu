@@ -1,0 +1,446 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    text-shadow: 0px 0px;
+    line-height: normal;
+}
+
+/*导航*/
+ul {
+	margin-bottom: 0;
+}
+
+li {
+	list-style: none;
+}
+
+header {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+#head .logo {
+    align-self: center;
+    margin-right: 100px;
+}
+
+#head .logo img {
+    width: 200px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+#nav ul {
+    display: flex;
+    font-size: 1.2em;
+    right: 300px;
+}
+
+#nav ul li {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#nav ul li:hover {
+	cursor: pointer;
+	color: white;
+	animation: headerNavLi 0.2s linear forwards;
+	font-weight: 600;
+}
+
+@keyframes headerNavLi{
+	from{background-position: 0 220%;}
+	to{background-position: 100% 100%;}
+}
+
+#nav ul li:nth-child(1) {
+	border-top: #8273CC 2px solid;
+	background-image: url(../images/headerNavLi/1.png);
+	background-repeat: no-repeat;
+	background-position: 0% 220%;
+}
+
+#nav ul li:nth-child(2) {
+	border-top: #F7B64B 2px solid;
+	background-image: url(../images/headerNavLi/2.png);
+	background-repeat: no-repeat;
+	background-position: 0% 220%;
+}
+
+#nav ul li:nth-child(3) {
+	border-top: #FE5A50 2px solid;
+	background-image: url(../images/headerNavLi/3.png);
+	background-repeat: no-repeat;
+	background-position: 0% 220%;
+}
+
+#nav ul li:nth-child(4) {
+	border-top: #AACB6A 2px solid;
+	background-image: url(../images/headerNavLi/4.png);
+	background-repeat: no-repeat;
+	background-position: 0% 220%;
+}
+
+#nav ul li:nth-child(5) {
+	border-top: #35A2EF 2px solid;
+	background-image: url(../images/headerNavLi/5.png);
+	background-repeat: no-repeat;
+	background-position: 0% 220%;
+}
+
+#nav ul li:nth-child(6):hover {
+	color: #F7B64B;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 150px;
+}
+
+#search .sea-words{
+	width: 150px;
+	height: 25px;
+	border: solid #EF9E41;
+	border-radius: 25px;
+}
+
+#search .sea-button{
+    height: 35px;
+	width: 40px;
+    border: thick solid #EF9E41;
+    border-radius: 25px;
+    background-color: #EF9E41;
+    color: #FFFFFF;
+}
+#search .sea-button:hover{
+	border: solid #EF9E41;
+	background-color: #FFFFFF;
+	color: #EF9E41;
+}
+#per{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+#per:hover{
+    font-size: 1.3em;
+    color: #F4B139;
+}
+
+/*个人信息*/
+#information{
+    background-color: #E4F5E4;
+    height: 230px;
+    background-image: url(../images/overly/testimonial.png);
+    margin-top: 20px;
+}
+
+.head-portrait img{
+    float: left;
+    width: 180px;
+    margin-top: 25px;
+    margin-left: 130px;
+    border: thick solid #FFFFFF;
+    border-radius: 180px;
+}
+
+.intro{
+    float: left;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+
+.intro-p1{
+    color: #F4B139;
+    font-weight: bolder;
+    font-size: xx-large;
+    line-height: 2em;
+}
+.intro-p2{
+    color: #F4B139;
+    font-size: large;
+}
+
+/*课程*/
+#elect{
+    margin-top: 50px;
+}
+
+.class-p{
+    color: #E99600;
+    font-size: larger;
+    text-shadow: 1px 0px #CECECE;
+    margin-left: 30px;
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ACACAC;
+}
+
+.all{
+	margin-right: 15px;
+    color: #F4B139;
+    text-shadow: 1px 0px #CECECE;
+	margin-left: 30px;
+}
+
+.a{
+    margin-right: 15px;
+    color: #787878;
+}
+
+.course{
+    float: left;
+    border: thin solid #E7E7E7;
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 250px;
+}
+
+.course:hover{
+    border: thin solid #BABABA;
+    -webkit-box-shadow: 2px 2px 3px 2px #EBEBEB;
+    box-shadow: 2px 2px 3px 2px #EBEBEB;
+}
+
+
+/*.c-panel-img img{*/
+	/*width: 250px;*/
+/*}*/
+
+/*修改图片类型*/
+
+.course .course_1{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/earth.jpg) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+/*图片2*/
+.course .course_2{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/kids.jpg) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片3*/
+.course .course_3{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/kid_pc.png) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片4*/
+.course .course_4{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/kid_girl.png) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片5*/
+.course .course_5{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/info_pk.png) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片6*/
+.course .course_6{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/hand.jpg) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片7*/
+.course .course_7{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/code.jpg) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+/*图片8*/
+.course .course_8{
+	position: relative;
+	width: 100%;
+	height: 140px;
+    background: url(../images/s_courseManage/big_boy.png) no-repeat;
+	background-size: cover;
+	font-size: 18px;
+	color: coral;
+}
+
+
+
+
+
+
+.c-panel-text{
+    margin-left: 10px;
+}
+.c-panel-text-n{
+    line-height: 2em;
+}
+.course-p1{
+    color: #9A9A9A;
+    font-size: small;
+}
+.course-p2{
+	line-height: 2em;
+    color: #F4B139;
+	font-size: small;
+}
+.course-p3{
+	line-height: 3em;
+	color: #9A9A9A;
+	font-size: small;
+}
+.inf-button{
+    clear: left;
+    margin-left: 500px;
+}
+.inf-button button{
+    border-style: none;
+    background-color: #FFFFFF;
+    font-size: large;
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-bottom: 100px;
+}
+
+.inf-button button:hover{
+    background-color: #F8BB6E;
+    color: #FFFFFF;
+}
+.button0{
+    color: #7A7A7A;
+}
+.button1{
+    color: #BA7B0A;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*尾部*/
+footer {
+	position: relative;
+	margin-top: 50px;
+	min-height: 200px;
+	height: 200px;
+	background: #77CABD;
+}
+
+footer>div:first-child {
+	position: absolute;
+	top: -50px;
+	height: 117px;
+	width: 100%;
+	background: url(../images/background/footer-bg.png);
+}
+
+footer>div:first-child>div {
+	height: 100%;
+	background: url(../images/overly/pattern.png);
+}
+
+.footer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	background: url(../images/overly/pattern.png);
+}
+
+.footer .footer-textLogo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 1100px;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.footer .footer-textLogo .footer-logo {
+	width: 300px;
+}
+
+.footer .footer-textLogo .footer-logo img {
+	width: 100%;
+}
+
+.footer .footer-textLogo .footer-text {
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+}
+
+.footer .footer-textLogo .footer-text>div>div {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.footer .footer-textLogo .footer-text>div>ul {
+	color: #7a7a7a;
+}
+
+.footer .footer-textLogo .footer-text>div>ul li:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.footer .footer-beian {
+	position: absolute;
+	top: 150px;
+	color: #7a7a7a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
