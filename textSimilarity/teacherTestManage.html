@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>教师试题管理页面</title>
+		<script src="jquery34/jquery-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="km.index.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-2">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h4 class="km-title">试题管理</h4>
+				</div>
+			</div>
+			<div class="row mt-1">
+				<div class="col-sm-10">
+					<button type="button" class="btn btn-success">新增试题</button>
+					<button type="button" class="btn btn-success">题目查询</button>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-sm-12">
+					<table  id="editTable" cellspacing="" cellpadding="" class="table table-bordered table-hover km-ttm-table">
+						<thead class="text-center">
+							<tr>
+								<th>id</th>
+								<th>题目</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody class="addTbody">
+							<tr>
+								<td>1</td>
+								<td>计算机中的指令是怎么构成的？</td>
+								<td>
+									<input type="button" value="查看 ">
+									<!-- <button type="button" class="btn btn- primary">查看</button> -->
+									|
+									<input type="button" value="删除">
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>简述计算机中地址总线与数据总线的概念。</td>
+								<td>
+									<!-- <button type="button" class="btn btn-primary">查看&编辑</button>
+									|
+									<button type="button" class="btn btn-danger">删除</button> -->
+									<input type="button" value="查看">
+									<!-- <button type="button" class="btn btn- primary">查看</button> -->
+									|
+									<input type="button" value="删除">
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>请简述程序设计语言的概念，程序的概念，以及两者之间的关系。</td>
+								<td>
+									<!-- <button type="button" class="btn btn-primary">查看&编辑</button>
+									|
+									<button type="button" class="btn btn-danger">删除</button> -->
+									<input type="button" value="查看">
+									<!-- <button type="button" class="btn btn- primary">查看</button> -->
+									|
+									<input type="button" value="删除">
+								</td>
+							</tr>
+							<tr class="addTr">
+								<td>29</td>
+								<td>简述什么是算法。</td>
+								<td>
+									<input type="button" value="添加" class="addRow">|
+									<input type="button" value="删除" class="delRow">
+								</td>
+							</tr>							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".addRow").click(function(){
+				var htm="";
+				htm +="<tr class='addTr'>";
+				htm+="<td></td>";
+				htm+="<td></td>";
+				htm+="<td><input type='button' class='addRow' value='添加' />|";
+				htm+="<input type='button' class='delRow' value='删除' />";
+				htm+="</td>";
+				htm+="</tr>";
+				$(".addTbody").append(htm);
+				// 删除
+				
+			})
+			$(".delRow").on("click",function(){
+				$(this).closest(".addTr").remove();
+			})
+			
+			
+			
+			// function createRow(){
+			// 	var editTable=document.getElementById("tbody");
+			// 	var tr=document.createElement("tr");
+			// 	var td0=document.createElement("td");
+			// 	var checkbox=document.createElement("input");
+			// 	checkbox.type="number";
+			// 	checkbox.name="checkRow";
+			// 	td0.appendChild(checkbox);
+			// 	var td1=document.createElement("td");
+			// 	td1.innerHTML="<input type='text' />";
+			// 	var td2=document.createElement("td");
+			// 	td2.innerHTML="<input type='button' value='查看' onclick='createRow()' ";
+			// 	var td3=document.createElement("td");
+			// 	td3.innerHTML="a3";
+			// 	tr.appendChild(td0);
+			// 	tr.appendChild(td1);
+			// 	tr.appendChild(td2);
+			// 	// tr.appendChild(td3);
+			// 	editTable.appendChild(tr);
+			// }
+			// function delRow(){
+			// 	var editTable=document.getElementById("tbody");
+			// 	if(confirm("确认删除所选?")){
+			// 		var checkboxs=document.getElementsByName("checkRow");
+			// 		for(var i=0;i<checkboxs.length;i++){
+			// 			if(checkboxs[i].checked){
+			// 				var n=checkboxs[i].parentNode.parentNode;
+			// 				editTable.removeChild(n);
+			// 				i--;
+			// 			}
+			// 		}
+					
+			// 	}
+			// }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>教师增加题目</title>
+		<script src="jquery34/jquery-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="km.index.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-2">
+				<div class="col-md-8 offset-2">
+					<h3 class="km-title text-center" style="color: #000000;">老师新增试题</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 offset-2">
+					<form action="" class="km-taq-form">
+						<div class="form-group">
+							<label for="">所属科目或知识点类别：</label>
+							<select class="form-control col-md-2">
+								<option value="">-----请选择----</option>
+								<option value ="">第一单元</option>
+								<option value ="">第二单元</option>
+								<option value ="">第三单元</option>
+								<option value ="">第四单元</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="">题干：</label>
+							<textarea rows="" cols="" class="form-control" placeholder="请输入题干"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="">参考答案：</label>
+							<textarea rows="" cols="" class="form-control" placeholder="请输入参考答案"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="">得分点：</label>
+							<button type="button" class="btn btn-primary">添加</button>
+							<br>
+							<div class="mt-1">
+								<label>关键词：</label><input type="text" class="form-control col-md-3 d-inline-block mr-2"><label>分值：</label><input type="number" class="form-control col-md-3 d-inline-block">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">分数：</label>
+							<input type="text" class="form-control" placeholder="请输入分数">
+						</div>
+						<div class="form-group">
+							<label for="">难度：</label>
+							<select class="form-control col-md-1">
+								<option value="">简单</option>
+								<option value="">一般</option>
+								<option value="">困难</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-primary">提交</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

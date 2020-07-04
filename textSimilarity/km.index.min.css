@@ -1,0 +1,76 @@
+/* 教师试题管理页面 */
+.km-title {
+	color: grey;
+}
+
+.km-ttm-table tbody tr td:first-child {
+	text-align: center;
+}
+
+.km-ttm-table tbody tr td:last-child {
+	text-align: center;
+}
+/* 教师试题管理页面结束 */
+
+/* 教师增加题目 */
+.km-taq-form label {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.km-taq-form textarea {
+	text-align: left;
+}
+/* 教师增加题目结束 */
+
+/* 教师考试管理 */
+.km-tem-table tbody tr td:first-child {
+	width: 100px;
+}
+/* 教师考试管理管理 */
+
+/* 教师创建考试题目 */
+.km-tcm-table tbody tr td:first-child {
+	width: 60px;
+	text-align: center;
+}
+
+.km-tcm-table tbody tr td:nth-child(2) {
+	text-align: center;
+	width: 60px;
+}
+
+.km-tcm-table tbody tr td:nth-child(3) {
+	width: 30%;
+}
+/* 教师创建考试题目结束 */
+
+/* five */
+.km-five-table tbody tr td:nth-child(1) {
+	text-align: center;
+}
+
+.km-five-table tbody tr td:nth-child(2) {
+	text-align: center;
+}
+
+.km-five-table tbody tr td:nth-child(4) {
+	text-align: center;
+}
+
+.km-five-table tbody tr td:nth-child(5) {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.km-five-table tbody tr td:nth-child(5) button {
+	border: 1px solid rgba(206,212,218, 1);
+}
+/* five结束 */
+
+/* sex */
+.km-sex-table tr td:first-child {
+	width: 200px;
+}
+/* sex结束 */

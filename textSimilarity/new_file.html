@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="timeCont"></div>
+		<div class="row " id="addtimebtn">
+			<div class="col-md-12 col-sm-12  col-xs-12">
+				<div id="fatBtn" style="">新增</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		/* 新增检测时间 */
+		$("#fatBtn").click(function() {
+			var htm = "";
+			htm += " <div class='form-group'>";
+			htm += "<label class='col-md-4  col-sm-4 col-xs-4 control-label'>巡更时间<em style='color: red;'>*</em></label>";
+			htm += "<div class='col-md-8  col-sm-8 col-xs-8'>";
+			htm += "<input type='text' class='form-control beginTime' name='stime'  value='09:00'></input>";
+			htm += "<input type='text' class='form-control endTime' name='etime'  value='17:00'></input><span class='dateDel'>删除</span></div></div>";
+			$('#timeCont').append(htm);
+			/* 删除时间 */
+			$(".dateDel").on("click", function() {
+				$(this).closest('.form-group').remove();
+			})
+		});
+	</script>
+
+</html>

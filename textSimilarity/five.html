@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>自动评分1-自然语言处理方法-得分情况</title>
+		<script src="jquery34/jquery-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="km.index.min.css">
+		<link rel="stylesheet" type="text/css" href="css/five.css"/>
+		<script src="js/xlsx.core.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/xlsx.full.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mt-2">
+				<div class="col-md-10 offset-1" style="text-align: center;">
+					<h4 class="km-title" style="color: #000000;">自动评分1-自然语言处理方法-得分情况</h4>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-10 offset-1 pr-5" style="text-align: center;">
+					<button type="button" class="btn btn-success">导出为Excel</button>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-10 offset-1">
+					<div class="con-width">
+						 <strong>题目:</strong>下面是国务院新闻办公室发布的“庆祝中华人名共和国成立70周年活动标识”。请指出活动标志的设计核心元素，并分析活动标识设计的视觉效果代表的意蕴。
+					</div>
+					<div class="con-width">
+						<strong>参考答案:</strong>标识以数字70和代表国家形象的国徽五星及天安门作为设计核心元素，紧扣中华人民共和国成立70周年庆典活动主题。70设计成翻开历史新的一页的视觉效果，7的造型又像节日的彩带，其飘动的效果与醒目的金色立体国徽五星及天安门所在的圆形构成了一动一静的互动关系，既体现了历史的厚重感，又蕴含了重大节日的欢庆气氛。
+					</div>
+					<table border="" cellspacing="" cellpadding="" class="table table-bordered table-hover km-five-table table-width">
+						<thead class="text-center">
+							<tr>
+								<th>学号</th>
+								<th>姓名</th>
+								<th>答案</th>
+								<th>自动评分</th>
+								<th>人工评分</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2017211103</td>
+								<td>刘丁明</td>
+								<td>国徽，红飘带，70。简单明了地表达了庆祝中华人名共和国成立70周年</td>
+								<td><span>10</span><span>已确定&已加入语料库中</span></td>
+								<td>
+									<input type="text" class="form-control d-inline-block col-md-2 mr-1">
+									<button type="button" class="btn btn-outline-secondary"><i class="fa fa-save"></i></button>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>2017211113</td>
+								<td>李鹏明</td>
+								<td>大大的70中有着天安门和五星红旗</td>
+								<td><span>10</span><span>已确定&已加入语料库中</span></td>
+								<td>
+									<input type="text" class="form-control d-inline-block col-md-2 mr-1">
+									<button type="button" class="btn btn-outline-secondary"><i class="fa fa-save"></i></button>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>2017211143</td>
+								<td>丁玉</td>
+								<td>70代表中华人名共和国成立70周年，而0内的国徽代表中华人名共和国，使人一目了然</td>
+								<td><span>10</span><span>已确定&已加入语料库中</span></td>
+								<td>
+									<input type="text" class="form-control d-inline-block col-md-2 mr-1">
+									<button type="button" class="btn btn-outline-secondary"><i class="fa fa-save"></i></button>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>2017211150</td>
+								<td>贾恩</td>
+								<td>0是我们中国的国徽，下面写着1949-2019，寓意着我们中国从49年创建，形象的写出了70周年。</td>
+								<td><span>10</span><span>已确定&已加入语料库中</span></td>
+								<td>
+									<input type="text" class="form-control d-inline-block col-md-2 mr-1">
+									<button type="button" class="btn btn-outline-secondary"><i class="fa fa-save"></i></button>
+								</td>
+							</tr>
+						</tbody>					
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
